@@ -27,11 +27,6 @@ body{
     width: 160px;
 }
 
-.box_search{
-    border-radius: 20px;
-    height: 28px;
-}
-
 .navbar-nav{
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
@@ -46,6 +41,37 @@ body{
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 20px;
+}
+
+#searchbar{
+    display: flex;
+    background-color: white;
+    width: 270px;
+    height: 35px;
+    top: 273px;
+    border-radius: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.25s;
+}
+
+#search-icon{
+    margin-left: 10px;
+    margin-top: -4px;
+    height: 20px;
+    width: 20px;
+}
+
+#searchbar input{
+    border: none;
+    margin-left: 10px;
+    width: 80%;
+    height: 90%;
+    outline: none;    
+}
+
+#searchbar:focus-within{
+    border: blue 1px solid;
 }
 
 .atas{
