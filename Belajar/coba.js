@@ -41,3 +41,12 @@ let grades = [30, 30, 20, 12]
     var input = Number(prompt("masukin angka desimal: "));
     console.log(input + " indecimal to binary ", + input.toString(16))
 }
+
+{
+    function user(name){
+        this.name = name;
+    }
+
+    let me = new user("gare");
+    console.log(me);
+}

@@ -1,0 +1,85 @@
+html, body{
+    background-color: #000000;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+}
+
+body{
+    background-color: #000000;
+}
+
+.navbar{
+    background-color: #000000;
+    height: 60px;
+    display: flex;
+}
+
+#logo{
+    width: 160px;
+}
+
+.box_search{
+    border-radius: 20px;
+    height: 28px;
+}
+
+.navbar-nav{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: white;
+    margin-top: 10px;
+}
+
+.navbar-nav .active{
+    background-color: #4E36E5;
+}
+
+.box_nav{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.container-profil{
+    margin-top: 70px;
+    background-color: transparent;
+    height: 240px;
+}
+
+#searchbar{
+    display: flex;
+    background-color: white;
+    width: 471px;
+    height: 42.99px;
+    top: 273px;
+    border-radius: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.25s;
+}
+
+#search-icon{
+    margin-left: 15px;
+    height: 20px;
+    width: 20px;
+}
+
+#searchbar input{
+    border: none;
+    margin-left: 10px;
+    width: 80%;
+    height: 90%;
+    outline: none;    
+}
+
+#searchbar:focus-within{
+    border: blue 2px solid;
+   
+}

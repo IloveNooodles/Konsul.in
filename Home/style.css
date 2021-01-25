@@ -2,15 +2,20 @@ html, body{
     width: 100%;
     margin: 0;
     background: #000000;
+    z-index: -3;
 }
 
 a{
     color: white;
     text-decoration: none;
+    padding: 0px 10px;
 }
 
 a:hover{
-    opacity: 50%;
+    opacity: 100%;
+    background-color:#4E36E5;
+    border-radius: 20px;
+    
 }
 
 #logo{
@@ -68,24 +73,22 @@ a:hover{
 
 #Vector2{
     position: absolute;
-    width: 877px;
-    height: 491px;
+    height: auto;
     right: 0;
     bottom: 0;
+    min-height: ;
 }
 
 #Vector3{
     position: absolute;
-    width: 924px;
-    height: 513px;
+    height: auto;
     right: 0;
     bottom: 0;
 }
 
 #Vector4{
     position: absolute;
-    width: 963px;
-    height: 526px;
+    height: auto;
     right: 0;
     bottom: 0;
 }
@@ -94,8 +97,7 @@ a:hover{
     left: 0;
     bottom: 0;
     position: absolute;
-    width: 877px;
-    height: 491px;
+    height: auto;
 }
 
 #Elipse10{
@@ -103,30 +105,59 @@ a:hover{
     height: 200px;
     width: 200px;
     left: -89px;
-    top: 531px;
+    top: 450px;
 }
 
 #Elipse10_2{
     position: absolute;
     width: 200px;
     height: 200px;
-    left: 1363px;
-    top: 49px;
+    top: 100px;
+    right: 0%;
 }
 
 #Elipse11{
     position: absolute;
     width: 200px;
     height: 200px;
-    left: 1330px;
-    top: -95px;
+    right: 0%;
+    top: 0%;
 }
 
 #Elipse12{
     position: absolute;
-    width: 200px;
-    height: 200px;
-    left: -134px;
-    top: 409px;
+   
+}
 
+#searchbar{
+    display: flex;
+    background-color: white;
+    width: 471px;
+    height: 42.99px;
+    left: 66px;
+    top: 273px;
+    border-radius: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+    transition: all 0.25s;
+}
+
+#search-icon{
+    margin-left: 15px;
+    height: 20px;
+    width: 20px;
+}
+
+#searchbar input{
+    border: none;
+    margin-left: 10px;
+    width: 80%;
+    height: 90%;
+    outline: none;    
+}
+
+#searchbar:focus-within{
+    border: blue 2px solid;
+   
 }
