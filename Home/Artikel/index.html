@@ -2,41 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Artikel</title>
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Konsul.in</title>
     <link rel="stylesheet" href="style.css">
+    <link href='../../new/images/favicon.ico' rel='icon' type='image/x-icon' />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <img id ="logo" class="logo" src="../../Media/1_tulisan.png" alt="logo konsul.in">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav mx-auto">
-                <div class="container box_nav">
-                    <a href="#">Home</a>
-                </div>
-                <div class="container box_nav active">
-                    <a href="#">Profil</a>
-                </div>
-                <div class="container box_nav">
-                    <a href="#">Artikel</a>
-                </div>
-                <div class="container box_nav">
-                    <a href="#">Event</a>
-                </div>
-            </div>
-                <div id="search">
-                    <div id="searchbar">
-                        <div id="search-icon">
-                            <img src="/img/VectorSearch.svg" alt="">
-                        </div>
-                    <input type="text" placeholder="Search...">
-                    </div>
-                </div>
-          </div>
+
+    <!--Navigation-->
+    <div id="navbar">
+        <div id="logo">
+            <img src="../../Media/1_tulisan.png" alt="">
         </div>
-    </nav>
+        <div id="navbarmenu">
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a class="active" href="#">Artikel</a>
+            <a href="#">Events</a>
+         </div>
+        
+        <!--Search-->
+        <div id="search">
+        <div id="searchbar">
+            <div id="search-icon">
+                <img src="../../img/VectorSearch.svg" alt="">
+            </div>
+            <input type="text" placeholder="Search..">
+        </div>
+        </div>
+    </div>
+
+    <!--Isi-->
+    <div class="container">
+        <div id="Title">
+            <h1>Artikel</h1>    
+        </div>
+        <div id="Title2">
+            <a href="#"><h2 id="deco">Terbaru</h2></a>
+            <a href="#"><h2>Terpopuler</h2></a>
+        </div>
+        <div class="artikel">
+            <div id="card1" class="card">
+
+            </div>
+            <div id="card2" class="card">
+
+            </div>
+            <div id="card3" class="card">
+
+            </div>
+            <div id="card4" class="card">
+
+            </div>
+            <div id="card5" class="card">
+
+            </div>
+            <div id="card6" class="card">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
