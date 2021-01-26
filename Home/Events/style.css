@@ -1,0 +1,115 @@
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+}
+
+body{
+    /* background-color: black; */
+    background-image: url('../../img/bg.png');
+    background-image: url('../../img/bg.png');
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.navbar{
+    background-color: transparent;
+    height: 60px;
+}
+
+#logo{
+    width: 160px;
+}
+
+.navbar-nav{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.navbar-nav .active{
+    background-color: #4E36E5;
+}
+
+.box_nav{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+#searchbar{
+    display: flex;
+    background-color: white;
+    width: 270px;
+    height: 35px;
+    top: 273px;
+    border-radius: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.25s;
+}
+
+#search-icon{
+    margin-left: 10px;
+    margin-top: -4px;
+    height: 20px;
+    width: 20px;
+}
+
+#searchbar input{
+    border: none;
+    margin-left: 10px;
+    width: 80%;
+    height: 90%;
+    outline: none;    
+}
+
+#searchbar:focus-within{
+    border: blue 1px solid;
+}
+
+.atas{
+    height: 100px;
+}
+
+.carousel-item .gambar{
+    height: 400px;
+    max-width: 600px;
+    background-color: transparent;
+}
+
+.carousel-item .gambar img{
+    max-width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-indicators{
+    top: 420px;
+}
+
+.carousel-indicators li{
+    background: #ffffff;
+    width: 30px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active{
+    background: #4E36E5;
+}
+
+.carousel-control-prev{
+    position: absolute;
+    left: 10%;
+}
+
+.carousel-control-next{
+    position: absolute;
+    right: 10%;
+}
