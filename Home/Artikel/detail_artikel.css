@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+}
+
+body{
+    background-color: white;
+    /* background-image: url('../../img/bg.png');
+    background-image: url('../../img/bg.png');
+    background-repeat: repeat-y;
+    background-size: cover; */
+}
+
+.navbar{
+    background-color: transparent;
+    height: 60px;
+}
+
+#logo{
+    width: 160px;
+}
+
+.navbar-nav{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.navbar-nav .active{
+    background-color: #4E36E5;
+}
+
+.box_nav{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+#searchbar{
+    display: flex;
+    background-color: white;
+    width: 270px;
+    height: 35px;
+    top: 273px;
+    border-radius: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.25s;
+}
+
+#search-icon{
+    margin-left: 10px;
+    margin-top: -4px;
+    height: 20px;
+    width: 20px;
+}
+
+#searchbar input{
+    border: none;
+    margin-left: 10px;
+    width: 80%;
+    height: 90%;
+    outline: none;    
+}
+
+#searchbar:focus-within{
+    border: blue 1px solid;
+}
+
+.atas{
+    height: 80px;
+}
+
+.kategori{
+    width: 150px;
+    margin-top: 5px;
+    background-color: cadetblue;
+    border-radius: 20px;
+    color: black;
+}
+
+.gambar{
+    display: flex;
+    justify-content: center;
+}
+
+.box-gambar{
+    width:500px;
+    height: 300px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.deskripsi{
+    text-align: justify;
+}
