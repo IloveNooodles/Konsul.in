@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 section{
     min-height: 600px;
@@ -16,8 +16,12 @@ a:hover{
     color: #18A0FB;
 }
 
+.active a:hover{
+    color: white;
+}
+
 body{
-    background-image: url('../../img/bg.png');
+    background-image: url('../../img/bg_rev.png');
     background-repeat: repeat;
     background-size: contain;
 }
@@ -41,7 +45,7 @@ body{
     margin-top: 20px;
     margin-left: 5%;
     width: 15%;
-    min-width: 250px;
+    min-width: 150px;
 }
 
 .navbar-nav{
@@ -51,8 +55,17 @@ body{
     font-weight: 600;
     color: white;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 40px;  
+}
+
+.navbar-besar{
     padding-left: 28%;
+    transition: 0.5s;
+}
+
+.container-fluid{
+    padding: 0;
+    /* margin: 0; */
 }
 
 .navbar-nav .active{
@@ -66,7 +79,7 @@ body{
     margin-right: 10px; */
     border-radius: 20px;
     align-items: center;
-    padding-top: 3px;
+    padding-top: 0px;
 }
 
 .spacer {
@@ -75,10 +88,13 @@ body{
     border-radius: 10px;
     background-color: whitesmoke;
     margin: 0 30px;
+    transition: 0.5s;
 }
 
-.berubah{
-    background-color: rgba(0, 0, 0, 0.900);
+.berubah,
+.hitam{
+    background-color:rgba(55, 58, 67, 1);
+    transition: 0.5s;
     /* border-bottom: white 1px solid; */
 }
 
@@ -86,10 +102,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
-    /* min-width: 260px; */
+    width: 32%;
+    min-width: 230px;
     height: 50px;
-    margin-left: 10%;
+    margin-left: 16%;
 }
 
 #searchbar {
@@ -159,7 +175,9 @@ body{
     border: none;
     border-radius: 20px;
     margin-bottom: 30px;
-    height: 150px;
+    height: 180px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .card-body-profil .foto{
@@ -173,15 +191,35 @@ body{
     margin-top: 5%;
 }
 
-.card-body-profil .deskripsi{
+.card-body-profil .deskripsi-profil{
     margin-left: 32%;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    margin-left: 65px;
 }
 
-.card-body-profil .deskripsi h5{
-    font-weight: 800;
+.card-body-profil .deskripsi-profil h5{
+    font-weight: 700;
 }
+
+.card-body-profil .deskripsi-profil p{
+    margin-bottom: 8px;
+}
+
+.card-body-profil .deskripsi-profil a{
+    background-color: #03abb0;
+    border-radius: 20px;
+    padding: 0px 11px;
+    color: white;
+    font-weight: 500;
+}
+
+/* .col-profil{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 20px;
+} */
 
 
 
@@ -220,6 +258,7 @@ body{
     height: 350px;
     max-height: 100%;
     border-radius: 20px;
+    margin: 0px 24px;
 }
 
 .card-body-artikel{
@@ -234,7 +273,7 @@ body{
 .box-gambar{
     width:100%;
     height: 150px;
-    max-height: 1005;
+    max-height: 100%;
     background-color: gray;
     border-radius: 10px;
 }
@@ -248,11 +287,11 @@ body{
 }
 
 .card-body-artikel a{
-    color: black;
+    color:#3e9fb8;
 }
 
 .card-body-artikel a:hover{
-    color: blue;
+    color: #46b5d1;
 }
 
 
@@ -265,7 +304,7 @@ body{
 }
 
 .carousel-item .gambar img{
-    max-width: 60%;
+    max-width: 40%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -278,8 +317,8 @@ body{
 
 .carousel-indicators li{
     background: #ffffff;
-    width: 30px;
-    height: 10px;
+    width: 20px;
+    height: 0px;
     border-radius: 50%;
 }
 
@@ -289,19 +328,23 @@ body{
 
 .carousel-control-prev{
     position: absolute;
-    left: 10%;
+    left: 15%;
 }
 
 .carousel-control-next{
     position: absolute;
-    right: 10%;
+    right: 15%;
+}
+
+.carousel-caption{
+    text-shadow: 0px 1px;
 }
 
 
 /* footer */
 
 .site-footer{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 45px;
     font-size: medium;
     line-height: normal;
