@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 section{
@@ -305,6 +305,7 @@ body{
 
 .carousel-item .gambar img{
     max-width: 40%;
+    min-width: 180px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -367,12 +368,12 @@ body{
     padding: 0 15px;
     
 }
-.site-footer li{
+.site-footer a{
     font-size: 18px;
+    font-weight: 400px;
     line-height: 30px;
     list-style-type: none;
     padding-left: 0;
-    
 }
 
 .site-footer h5{
@@ -383,9 +384,7 @@ body{
 }
 
 .site-footer .hub{
-    float: right;
     float: bottom;
-
 }
 
 .site-footer button{
@@ -408,22 +407,18 @@ body{
     
 }
 
+.float img{
+    position: fixed;
+}
+
 .my-float{
     width: 150px;
+    right: 40px !important;
+    bottom: 40px !important;
 }
 
-
-
-
-/* Konsultasi */
-
-#konsultasi {
-    position: absolute;
-    bottom: 40px;
-    right: 40px;
-    z-index: 6;
-}
-
-#konsultasi img {
-    height: 100px;
+.float-kecil{
+    width: 100px;
+    right: 20px !important;
+    bottom: 20px !important;
 }
